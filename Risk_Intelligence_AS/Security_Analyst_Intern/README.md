@@ -28,60 +28,77 @@ In order to pull the data together from various datasets into the Excel document
 
 On LinkedIn I made an article about this project more in-depth. 
 ### Sources 
-##### Governance & Corruption
-- Transparency International: Corruption Perceptions Index 2025
-  https://www.transparency.org/en/cpi/2024
-- EIU: Democracy Index 2024
-  https://www.eiu.com/n/campaigns/democracy-index-2024/
-- Cato Institute: Human Freedom Index 2023
-  https://www.cato.org/human-freedom-index/2023
-- World Justice Project: Rule of Law Index 2025
-  https://worldjusticeproject.org/rule-of-law-index/downloads/
+Note: All datasets accessed and downloaded on 3 July 2026 for this project.
 
-##### Economic Strength
+##### GOVERNANCE & CORRUPTION
+
+- Transparency International: Corruption Perceptions Index 2025
+  https://worldpopulationreview.com/country-rankings/corruption-perceptions-index-by-country
+
+- EIU: Democracy Index 2026
+  https://worldpopulationreview.com/country-rankings/democracy-index-by-country
+
+- Cato Institute: Human Freedom Index 2026
+  https://worldpopulationreview.com/country-rankings/freedom-index-by-country
+
+- World Justice Project: Rule of Law Index 2026
+  https://worldpopulationreview.com/country-rankings/world-justice-project-(wjp)-rule-of-law-index
+
+##### ECONOMIC STRENGTH
+
 - IMF: GDP per Capita 2026
-  https://www.imf.org/en/Publications/WEO/weo-database/2025/April
+  https://worldpopulationreview.com/country-rankings/gdp-per-capita-by-country
+
 - WorldPopulationReview: Inflation Rate 2026
   https://worldpopulationreview.com/country-rankings/inflation-rate-by-country
-- WorldPopulationReview: Unemployment Rate 2024
+
+- WorldPopulationReview: Unemployment Rate 2026
   https://worldpopulationreview.com/country-rankings/unemployment-by-country
-- WorldPopulationReview: Debt-to-GDP Ratio 2024
+
+- WorldPopulationReview: Debt-to-GDP Ratio 2026
   https://worldpopulationreview.com/country-rankings/debt-to-gdp-ratio-by-country
 
-##### Security
-- Vision of Humanity: Global Peace Index 2025
-  https://www.visionofhumanity.org/maps/#/
-- Vision of Humanity: Global Terrorism Index 2025
-  https://www.visionofhumanity.org/maps/global-terrorism-index/#/
-- WorldPopulationReview: Military Spending % GDP 2024
-  https://worldpopulationreview.com/country-rankings/military-spending-by-country
-- ACLED: Political Violence Events, Fatalities, Civilian Targeting 2023-2025
-  Download page: https://acleddata.com/data-export-tool/
-  (Live pull endpoint used by acled_batch.py:
-   https://apps.acleddata.com/newexplorer/standard/)
+##### SECURITY
 
-##### Political Stability
-- World Bank: Political Stability Percentile Rank 2023
-  https://databank.worldbank.org/source/worldwide-governance-indicators
+- Vision of Humanity: Global Peace Index 2026
+  https://worldpopulationreview.com/country-rankings/safest-countries-in-the-world
+
+- Vision of Humanity: Global Terrorism Index 2026
+  https://worldpopulationreview.com/country-rankings/global-terrorism-index-by-country
+
+- WorldPopulationReview: Military Spending % GDP 2026
+  https://worldpopulationreview.com/country-rankings/military-spending-by-country
+
+- ACLED: Political Violence Events, Fatalities, Civilian Targeting 2023-2025
+  Download: https://acleddata.com/data-export-tool/
+  Live pull (acled_batch.py): https://apps.acleddata.com/newexplorer/standard/
+
+##### POLITICAL STABILITY
+
+- World Bank: Political Stability Percentile Rank 2026
+  https://worldpopulationreview.com/country-rankings/political-stability-by-country
+
 - Fund for Peace: Fragile States Index 2023
   https://fragilestatesindex.org/excel/
 
-##### Infrastructure & Country Reference
-- CIA World Factbook (final version January 2026)
-  Original site sunset February 4, 2026. Archived versions available via:
-  - Internet Archive: https://web.archive.org/web/2026*/https://www.cia.gov/the-world-factbook/
-  - Mozilla Data Collective: final dataset published post-closure
-  - OpenFactBook (community rebuild): https://openfactbook.org/
-  - I have attached the CIA Factbook Dataset I had previously web scraped using VBA before the shutdown (had no idea until later that they had shut it down out of the blue). 
+##### INFRASTRUCTURE & COUNTRY REFERENCE
 
-##### Environmental Layer
+- CIA World Factbook (final version January 2026)
+  Original site sunset February 4, 2026.
+  I had previously web scraped the full Factbook using VBA before the shutdown.
+  Archived versions available via:
+  Internet Archive: https://web.archive.org/web/2026*/https://www.cia.gov/the-world-factbook/
+  OpenFactBook (community rebuild): https://openfactbook.org/
+
+##### ENVIRONMENTAL LAYER
+
 - ECMWF Copernicus: ERA5 Wave Height + Wind Speed 2023-2026
   https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means
-  (Requires free CDS account. Select: significant wave height,
-   10m u/v wind components, monthly means, NetCDF format)
+  Requires free CDS account. Select: significant wave height,
+  10m u/v wind components, monthly means, NetCDF format.
+
 - IMF PortWatch: Chokepoint Vessel Transit Counts
   https://portwatch.imf.org/datasets/
+
 - HyperVolatility: Strait Width, Depth, Lane Counts
   https://hypervolatility.com/maritime-chokepoints/
-- IMO / BIMCO: Navigable Width and Minimum Depth
-  https://www.bimco.org/insights-and-information
